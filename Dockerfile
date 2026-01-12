@@ -25,8 +25,10 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     dpkg -i cloudflared.deb; \
     rm cloudflared.deb; \
     cloudflared --version; \
-    mkdir -p /ssh && chmod 777 /ssh && cd /var/www/html/ssh && \
-    wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64 && \
+    mkdir -p /ssh; \
+    chmod 777 /ssh; \
+    cd /ssh; \
+    wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod +x ttyd
 
 EXPOSE 22 7681
