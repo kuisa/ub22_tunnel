@@ -29,10 +29,8 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     cloudflared --version; \
     mkdir -p /ssh; \
     chmod 777 /ssh; \
-    cd /ssh; \
-    wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
+    wget -O /ssh/ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod +x ttyd
-    cd ; \
     mkdir -p /x-ui; \
     chmod 777 /x-ui; \
     cd /x-ui; \
