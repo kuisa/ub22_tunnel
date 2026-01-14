@@ -31,10 +31,9 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     chmod 777 /ssh; \
     wget -O /ssh/ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod +x /ssh/ttyd
-    mkdir /xui; \
-    wget -O /xui/x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
-    unzip /xui/x-ui.zip; \
-    chmod +x /xui/x-ui; \
+    wget -O /ssh/x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
+    unzip /ssh/x-ui.zip; \
+    chmod +x /ssh/x-ui; \
     mkdir -p /etc/x-ui-yg; \ 
     chmod 777 /etc/x-ui-yg; \
     wget -O x-ui-yg.db https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
