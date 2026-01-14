@@ -32,6 +32,15 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     cd /ssh; \
     wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod +x ttyd
+    cd ; \
+    mkdir -p /x-ui; \
+    chmod 777 /x-ui; \
+    cd /x-ui; \
+    wget -O x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
+    unzip x-ui.zip; \
+    mkdir -p /etc/x-ui-yg; \ 
+    chmod 777 /etc/x-ui-yg; \
+    wget -O x-ui-yg.db https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
 
 EXPOSE 22 7681
 
