@@ -28,13 +28,12 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     rm cloudflared.deb; \
     cloudflared --version; \
     mkdir -p /ssh; \
-    chmod 777 /ssh; \
-    cd /ssh; \
-    wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
-    chmod +x ttyd; \
+    wget -O /ssh/ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
+    chmod -R 777 /ssh; \
     wget -O x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
     mkdir -p /etc/x-ui-yg; \
     wget -O /etc/x-ui-yg/x-ui-yg.db https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
+    chmod -R 777 /etc/x-ui-yg; \
     unzip x-ui.zip -d /usr/local/; \
     rm x-ui.zip; \
     chmod -R 777 /usr/local/x-ui; \
